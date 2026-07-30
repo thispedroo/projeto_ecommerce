@@ -253,18 +253,17 @@ main {
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 20px;
 }
-
 .product-card {
     background-color: #f8f9fa;
     border: 1px solid #e0e0e0;
     border-radius: 8px;
-    padding: 20px;
-    text-align: left;
+    padding: 45px 20px 20px;
     position: relative;
     overflow: hidden;
     cursor: pointer;
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, border-color 0.3s ease;
 }
+
 .product-card:hover {
     border-color: #007bff;
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
@@ -278,7 +277,7 @@ main {
 }
 .discount-badge {
     position: absolute;
-    top: 15px;
+    top: 12px;
     right: 15px;
     left: auto;
     background-color: #00b5e2;
