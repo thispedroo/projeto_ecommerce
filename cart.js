@@ -131,6 +131,13 @@ function initAddToCartButtons() {
         btn.dataset.bound = 'true';
 
         btn.addEventListener('click', function () {
+            const user = typeof getLoggedUser === 'function' ? getLoggedUser() : null;
+            if (!user) {
+                showToast('Crie uma conta ou faça login para adicionar itens ao carrinho.');
+                setTimeout(() => { window.location.href = 'login.html'; }, 1500);
+                return;
+            }
+
             const name = this.dataset.name;
             const price = parseFloat(this.dataset.price);
             const img = this.dataset.img;
@@ -155,6 +162,15 @@ function initAddToCartButtons() {
 }
 
 document.addEventListener('DOMContentLoaded', function () {
+    const isCartPage = !!document.getElementById('cart-items');
+    if (isCartPage) {
+        const user = typeof getLoggedUser === 'function' ? getLoggedUser() : null;
+        if (!user) {
+            window.location.href = 'login.html';
+            return;
+        }
+    }
+
     updateCartBadge();
     renderCartPage();
 
