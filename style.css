@@ -178,19 +178,19 @@ main {
 }
 
 #slide-relogio {
-    background-image: url('img/relogio.png');
+    background-image: url('img/clock.png');
     background-size: auto 80%;
     background-position: 85% center;
 }
 
 #slide-celular {
-    background-image: url('img/galaxy s22.png');
+    background-image: url('img/galaxy-s22.png');
     background-size: auto 90%;
     background-position: 85% center;
 }
 
 #slide-fones {
-    background-image: url('img/fone.png');
+    background-image: url('img/headphones.png');
     background-size: auto 65%;
     background-position: 85% center;
 }

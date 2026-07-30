@@ -1,8 +1,8 @@
 const PRODUCTS = [
-    { name: "Galaxy M13 (4GB | 64 GB)", brand: "Samsung", price: 659, oldPrice: 1499, discount: "56% OFF", img: "img/galaxy m13.png" },
-    { name: "Galaxy M33 (4GB | 64 GB)", brand: "Samsung", price: 1699, oldPrice: 2499, discount: "32% OFF", img: "img/galaxy m33.png" },
-    { name: "Galaxy M53 (4GB | 64 GB)", brand: "Samsung", price: 3197, oldPrice: 4099, discount: "22% OFF", img: "img/galaxy m53.png" },
-    { name: "Galaxy S22 Ultra (12GB | 128 GB)", brand: "Samsung", price: 6793, oldPrice: 8599, discount: "21% OFF", img: "img/galaxy s22.png" },
+    { name: "Galaxy M13 (4GB | 64 GB)", brand: "Samsung", price: 659, oldPrice: 1499, discount: "56% OFF", img: "img/galaxy-m13.png" },
+    { name: "Galaxy M33 (4GB | 64 GB)", brand: "Samsung", price: 1699, oldPrice: 2499, discount: "32% OFF", img: "img/galaxy-m33.png" },
+    { name: "Galaxy M53 (4GB | 64 GB)", brand: "Samsung", price: 3197, oldPrice: 4099, discount: "22% OFF", img: "img/galaxy-m53.png" },
+    { name: "Galaxy S22 Ultra (12GB | 128 GB)", brand: "Samsung", price: 6793, oldPrice: 8599, discount: "21% OFF", img: "img/samsung-s22-ultra.png" },
     { name: "iPhone 13 (128 GB)", brand: "Apple", price: 3999, oldPrice: 5499, discount: "27% OFF", img: "img/iphone-13.png" },
     { name: "iPhone 12 (64 GB)", brand: "Apple", price: 2899, oldPrice: 3999, discount: "27% OFF", img: "img/iphone-12.png" },
     { name: "Redmi Note 12 (128 GB)", brand: "Xiaomi", price: 1199, oldPrice: 1699, discount: "29% OFF", img: "img/redmi-note-12.png" },
