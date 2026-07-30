@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Carrinho - Urubu Store</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <nav class="main-nav">
+            <div class="container">
+                <a href="index.html"><img src="img/20251007_230948974_iOS.png" alt="Urubu Store" class="logo"></a>
+                <div class="user-actions">
+                    <a href="index.html"><i class="fa-solid fa-arrow-left"></i> Continuar comprando</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container cart-page">
+        <h2>Meu Carrinho</h2>
+
+        <div id="cart-empty" class="cart-empty">
+            <p>Seu carrinho está vazio.</p>
+            <a href="index.html" class="cart-continue-link">Ver produtos</a>
+        </div>
+
+        <div id="cart-layout" class="cart-layout">
+            <div id="cart-items" class="cart-items"></div>
+
+            <div class="cart-summary">
+                <h3>Resumo do pedido</h3>
+                <div class="cart-summary-row">
+                    <span>Subtotal</span>
+                    <span id="cart-subtotal">R$ 0,00</span>
+                </div>
+                <button id="checkout-btn" class="cart-checkout-btn">Finalizar compra</button>
+            </div>
+        </div>
+    </main>
+
+    <script src="auth.js"></script>
+    <script src="cart.js"></script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Categorias - Urubu Store</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <nav class="main-nav">
+            <div class="container">
+                <a href="index.html"><img src="img/20251007_230948974_iOS.png" alt="Urubu Store" class="logo"></a>
+                <div class="user-actions">
+                    <a href="login.html" id="user-action-link"><i class="fa-solid fa-user"></i> Entrar / Cadastrar</a>
+                    <a href="carrinho.html" id="cart-link"><i class="fa-solid fa-cart-shopping"></i> Carrinho <span class="cart-badge" id="cart-badge">0</span></a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container products-page">
+        <div class="section-header">
+            <h2>Compre por Categorias</h2>
+        </div>
+
+        <div class="category-grid category-grid-full">
+            <a href="produtos.html?marca=Samsung" class="category-item">
+                <div class="category-icon"><img src="img/logo_samsung.png" alt="Samsung"></div>
+                <p>Samsung</p>
+            </a>
+            <a href="produtos.html?marca=Apple" class="category-item">
+                <div class="category-icon"><img src="img/logo_apple.png" alt="Apple"></div>
+                <p>Apple</p>
+            </a>
+            <a href="produtos.html?marca=Xiaomi" class="category-item">
+                <div class="category-icon"><img src="img/logo xiaomi.png" alt="Xiaomi"></div>
+                <p>Xiaomi</p>
+            </a>
+            <a href="produtos.html?marca=Realme" class="category-item">
+                <div class="category-icon"><img src="img/logo_realme.png" alt="Realme"></div>
+                <p>Realme</p>
+            </a>
+            <a href="produtos.html?marca=Asus" class="category-item">
+                <div class="category-icon"><img src="img/logo_asus.png" alt="Asus"></div>
+                <p>Asus</p>
+            </a>
+            <a href="produtos.html" class="category-item">
+                <div class="category-icon category-icon-placeholder"><i class="fa-solid fa-icons"></i></div>
+                <p>Ver todos</p>
+            </a>
+        </div>
+    </main>
+
+    <script src="auth.js"></script>
+    <script src="cart.js"></script>
+</body>
+</html>

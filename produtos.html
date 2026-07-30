@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smartphones - Urubu Store</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <nav class="main-nav">
+            <div class="container">
+                <a href="index.html"><img src="img/20251007_230948974_iOS.png" alt="Urubu Store" class="logo"></a>
+                <div class="user-actions">
+                    <a href="login.html" id="user-action-link"><i class="fa-solid fa-user"></i> Entrar / Cadastrar</a>
+                    <a href="carrinho.html" id="cart-link"><i class="fa-solid fa-cart-shopping"></i> Carrinho <span class="cart-badge" id="cart-badge">0</span></a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container products-page">
+        <div class="section-header">
+            <h2>Todos os Smartphones</h2>
+        </div>
+
+        <div class="brand-filters">
+            <button class="brand-filter-btn active" data-brand="Todos">Todos</button>
+            <button class="brand-filter-btn" data-brand="Samsung">Samsung</button>
+            <button class="brand-filter-btn" data-brand="Apple">Apple</button>
+            <button class="brand-filter-btn" data-brand="Xiaomi">Xiaomi</button>
+            <button class="brand-filter-btn" data-brand="Asus">Asus</button>
+            <button class="brand-filter-btn" data-brand="Realme">Realme</button>
+        </div>
+
+        <div class="product-grid" id="all-products-grid"></div>
+    </main>
+
+    <script src="auth.js"></script>
+    <script src="cart.js"></script>
+    <script src="products.js"></script>
+</body>
+</html>

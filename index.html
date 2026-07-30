@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Urubu - sua loja online</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <div class="top-bar">
+            <div class="container">
+                <div class="top-bar-links">
+                </div>
+            </div>
+        </div>
+
+        <nav class="main-nav">
+            <div class="container">
+                <img src="img/20251007_230948974_iOS.png" alt="Urubu Store" class="logo">
+                <div class="search-bar">
+                    <input type="text" placeholder="Procure por itens">
+                    <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+                <div class="user-actions">
+                    <a href="login.html" id="user-action-link"><i class="fa-solid fa-user"></i> Entrar / Cadastrar</a>
+                    <a href="carrinho.html" id="cart-link"><i class="fa-solid fa-cart-shopping"></i> Carrinho <span class="cart-badge" id="cart-badge">0</span></a>
+                </div>
+            </div>
+        </nav>
+
+        <nav class="category-nav">
+            <div class="container">
+                <a href="#">Eletrônicos</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="hero">
+
+            <div class="hero-slide active" id="slide-relogio">
+                <div class="hero-content">
+                    <p>A melhor oferta online em eletrônicos</p>
+                    <h1>ELETRÔNICOS UTÉIS.</h1>
+                    <h2>COM ATÉ 80% DE DESCONTO!</h2>
+                </div>
+            </div>
+
+            <div class="hero-slide" id="slide-celular">
+                <div class="hero-content">
+                    <p>As melhores marcas</p>
+                    <h1>SMARTPHONES.</h1>
+                    <h2>COM ATÉ 50% DE DESCONTO!</h2>
+                </div>
+            </div>
+
+            <div class="hero-slide" id="slide-fones">
+                <div class="hero-content">
+                    <p>O melhor som</p>
+                    <h1>FONES BLUETOOTH.</h1>
+                    <h2>A PARTIR DE R$ 99!</h2>
+                </div>
+            </div>
+
+            <div class="hero-indicators">
+                <span class="indicator active" data-slide="slide-relogio"></span>
+                <span class="indicator" data-slide="slide-celular"></span>
+                <span class="indicator" data-slide="slide-fones"></span>
+            </div>
+        </section>
+
+        <section class="product-showcase">
+            <div class="section-header">
+                <h2>Aproveite a melhor oferta em Smartphones</h2>
+                <a href="produtos.html" class="view-all">Ver todos <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+            <div class="product-grid">
+
+                <div class="product-card">
+                    <div class="discount-badge">56% OFF</div>
+                    <div class="product-image-container">
+                        <img src="img/galaxy m13.png" alt="Galaxy M13" class="product-image">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Galaxy M13 (4GB | 64 GB)</h3>
+                        <div class="product-pricing">
+                            <span class="current-price">R$ 659</span>
+                            <s class="original-price">R$ 1.499</s>
+                        </div>
+                        <div class="product-savings">
+                            Economia de R$ 839
+                        </div>
+                                            <button class="add-to-cart-btn" data-name="Galaxy M13 (4GB | 64 GB)" data-price="659" data-img="img/galaxy m13.png"><i class="fa-solid fa-cart-plus"></i> Adicionar ao carrinho</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="discount-badge">32% OFF</div>
+                    <div class="product-image-container">
+                        <img src="img/galaxy m33.png" alt="Galaxy M33" class="product-image">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Galaxy M33 (4GB | 64 GB)</h3>
+                        <div class="product-pricing">
+                            <span class="current-price">R$ 1699</span>
+                            <s class="original-price">R$ 2.499</s>
+                        </div>
+                        <div class="product-savings">
+                            Economia de R$ 799
+                        </div>
+                                            <button class="add-to-cart-btn" data-name="Galaxy M33 (4GB | 64 GB)" data-price="1699" data-img="img/galaxy m33.png"><i class="fa-solid fa-cart-plus"></i> Adicionar ao carrinho</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="discount-badge">22% OFF</div>
+                    <div class="product-image-container">
+                        <img src="img/galaxy m53.png" alt="Galaxy M53" class="product-image">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Galaxy M53 (4GB | 64 GB)</h3>
+                        <div class="product-pricing">
+                            <span class="current-price">R$ 3.197</span>
+                            <s class="original-price">R$ 4.099</s>
+                        </div>
+                        <div class="product-savings">
+                            Economia de R$ 901
+                        </div>
+                                            <button class="add-to-cart-btn" data-name="Galaxy M53 (4GB | 64 GB)" data-price="3197" data-img="img/galaxy m53.png"><i class="fa-solid fa-cart-plus"></i> Adicionar ao carrinho</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="discount-badge">21% OFF</div>
+                    <div class="product-image-container">
+                        <img src="img/galaxy s22.png" alt="Galaxy S22 Ultra" class="product-image">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Galaxy S22 Ultra (12GB | 128 GB)</h3>
+                        <div class="product-pricing">
+                            <span class="current-price">R$ 6.793</span>
+                            <s class="original-price">R$ 8.599</s>
+                        </div>
+                        <div class="product-savings">
+                            Economia de R$ 1.805
+                        </div>
+                                            <button class="add-to-cart-btn" data-name="Galaxy S22 Ultra (12GB | 128 GB)" data-price="6793" data-img="img/galaxy s22.png"><i class="fa-solid fa-cart-plus"></i> Adicionar ao carrinho</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="discount-badge">32% OFF</div>
+                    <div class="product-image-container">
+                        <img src="img/galaxy m33.png" alt="Galaxy M33" class="product-image">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Galaxy M33 (4GB | 64 GB)</h3>
+                        <div class="product-pricing">
+                            <span class="current-price">R$ 1699</span>
+                            <s class="original-price">R$ 2.499</s>
+                        </div>
+                        <div class="product-savings">
+                            Economia de R$ 799
+                        </div>
+                                            <button class="add-to-cart-btn" data-name="Galaxy M33 (4GB | 64 GB)" data-price="1699" data-img="img/galaxy m33.png"><i class="fa-solid fa-cart-plus"></i> Adicionar ao carrinho</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="top-categories">
+            <div class="section-header">
+                <h2>Compre por Categorias</h2>
+                <a href="categorias.html" class="view-all">Ver todas <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+
+            <div class="category-grid">
+                <div class="category-item">
+                    <div class="category-icon">
+                        <img src="img/logo_apple.png" alt="Apple">
+                    </div>
+                    <p>Apple</p>
+                </div>
+                <div class="category-item">
+                    <div class="category-icon">
+                        <img src="img/logo_samsung.png" alt="Samsung">
+                    </div>
+                    <p>Samsung</p>
+                </div>
+                <div class="category-item">
+                    <div class="category-icon">
+                        <img src="img/logo_realme.png" alt="Realme">
+                    </div>
+                    <p>Realme</p>
+                </div>
+                <div class="category-item">
+                    <div class="category-icon">
+                        <img src="img/logo_asus.png" alt="Asus">
+                    </div>
+                    <p>Asus</p>
+                </div>
+                <div class="category-item">
+                    <div class="category-icon">
+                        <img src="img/logo xiaomi.png" alt="Xiaomi">
+                    </div>
+                    <p>Xiaomi</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h4>Institucional</h4>
+                    <ul>
+                        <li><a href="#">Sobre a Urubu Store</a></li>
+                        <li><a href="#">Política de Privacidade</a></li>
+                        <li><a href="#">Termos e Condições</a></li>
+                        <li><a href="#">Trabalhe Conosco</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Ajuda e Suporte</h4>
+                    <ul>
+                        <li><a href="#">Perguntas Frequentes (FAQ)</a></li>
+                        <li><a href="#">Como Comprar</a></li>
+                        <li><a href="#">Política de Devolução</a></li>
+                        <li><a href="#">Fale Conosco</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Redes Sociais</h4>
+                    <p>Siga-nos para não perder nenhuma oferta!</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Siga-nos no Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" aria-label="Siga-nos no Facebook"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#" aria-label="Fale conosco no WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="copyright">
+                    &copy; 2025 Urubu Store. Todos os direitos reservados.
+                </div>
+                <div class="payment-icons">
+                    <span>Pagamento seguro via:</span>
+                    <i class="fa-brands fa-cc-visa" title="Visa"></i>
+                    <i class="fa-brands fa-cc-mastercard" title="Mastercard"></i>
+                    <i class="fa-brands fa-pix" title="Pix"></i>
+                    <i class="fa-brands fa-paypal" title="PayPal"></i>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+    <script src="auth.js"></script>
+    <script src="cart.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
