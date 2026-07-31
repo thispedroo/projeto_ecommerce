@@ -20,10 +20,10 @@
         <nav class="main-nav">
             <div class="container">
                 <img src="img/store_profile.png" alt="Urubu Store" class="logo">
-                <div class="search-bar">
-                    <input type="text" placeholder="Procure por itens">
-                    <button><i class="fa-solid fa-magnifying-glass"></i></button>
-                </div>
+                <form class="search-bar" id="search-form">
+                    <input type="text" id="search-input" name="busca" placeholder="Procure por itens" autocomplete="off">
+                    <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </form>
                 <div class="user-actions">
                     <a href="login.html" id="user-action-link"><i class="fa-solid fa-user"></i> Entrar / Cadastrar</a>
                     <a href="carrinho.html" id="cart-link"><i class="fa-solid fa-cart-shopping"></i> Carrinho <span class="cart-badge" id="cart-badge">0</span></a>
@@ -266,5 +266,6 @@
     <script src="auth.js"></script>
     <script src="cart.js"></script>
     <script src="script.js"></script>
+    <script src="search.js"></script>
 </body>
 </html>

@@ -44,16 +44,37 @@ function renderProductCard(product) {
     `;
 }
 
-function renderProducts(filterBrand) {
+let currentSearchTerm = '';
+
+function renderProducts(filterBrand, searchTerm) {
     const grid = document.getElementById('all-products-grid');
     if (!grid) return;
 
-    const filtered = filterBrand && filterBrand !== 'Todos'
+    if (typeof searchTerm !== 'undefined') {
+        currentSearchTerm = searchTerm || '';
+    }
+
+    let filtered = filterBrand && filterBrand !== 'Todos'
         ? PRODUCTS.filter(p => p.brand === filterBrand)
         : PRODUCTS;
 
-    grid.innerHTML = filtered.map(renderProductCard).join('');
+    if (currentSearchTerm) {
+        const termo = currentSearchTerm.toLowerCase();
+        filtered = filtered.filter(p => p.name.toLowerCase().includes(termo));
+    }
+
+    grid.innerHTML = filtered.length
+        ? filtered.map(renderProductCard).join('')
+        : '<p class="no-results">Nenhum produto encontrado para essa busca.</p>';
+
     initAddToCartButtons();
+
+    const heading = document.querySelector('.section-header h2');
+    if (heading) {
+        heading.textContent = currentSearchTerm
+            ? `Resultados para: "${currentSearchTerm}"`
+            : 'Todos os Smartphones';
+    }
 }
 
 function setupBrandFilters() {
@@ -74,6 +95,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     const params = new URLSearchParams(window.location.search);
     const marcaParam = params.get('marca');
+    const buscaParam = params.get('busca');
 
     setupBrandFilters();
 
@@ -82,11 +104,11 @@ document.addEventListener('DOMContentLoaded', function () {
         if (targetBtn) {
             document.querySelectorAll('.brand-filter-btn').forEach(b => b.classList.remove('active'));
             targetBtn.classList.add('active');
-            renderProducts(marcaParam);
+            renderProducts(marcaParam, buscaParam);
         } else {
-            renderProducts('Todos');
+            renderProducts('Todos', buscaParam);
         }
     } else {
-        renderProducts('Todos');
+        renderProducts('Todos', buscaParam);
     }
 });
