@@ -6,6 +6,12 @@ Protótipo de **e-commerce front-end** de eletrônicos (foco em smartphones), fe
 
 ---
 
+## 🔗 Demo
+
+**[👉 Acesse a demo ao vivo](https://thispedroo.github.io/projeto_ecommerce/)**
+
+---
+
 ## 📸 Visão geral
 
 - Página inicial com carrossel de banners e vitrine de destaques;
@@ -53,7 +59,9 @@ urubu-store/
 
 ---
 
-## 🚀 Como rodar
+## 🚀 Rodando localmente (opcional, para dev)
+
+Quer editar o código ou rodar na sua máquina? Basta:
 
 ```bash
 git clone https://github.com/seu-usuario/urubu-store.git
