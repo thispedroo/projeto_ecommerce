@@ -1,14 +1,14 @@
 const PRODUCTS = [
-    { name: "Galaxy M13 (4GB | 64 GB)", brand: "Samsung", price: 659, oldPrice: 1499, discount: "56% OFF", img: "img/galaxy-m13.png" },
-    { name: "Galaxy M33 (4GB | 64 GB)", brand: "Samsung", price: 1699, oldPrice: 2499, discount: "32% OFF", img: "img/galaxy-m33.png" },
-    { name: "Galaxy M53 (4GB | 64 GB)", brand: "Samsung", price: 3197, oldPrice: 4099, discount: "22% OFF", img: "img/galaxy-m53.png" },
-    { name: "Galaxy S22 Ultra (12GB | 128 GB)", brand: "Samsung", price: 6793, oldPrice: 8599, discount: "21% OFF", img: "img/samsung-s22-ultra.png" },
-    { name: "iPhone 13 (128 GB)", brand: "Apple", price: 3999, oldPrice: 5499, discount: "27% OFF", img: "img/iphone-13.png" },
-    { name: "iPhone 12 (64 GB)", brand: "Apple", price: 2899, oldPrice: 3999, discount: "27% OFF", img: "img/iphone-12.png" },
-    { name: "Redmi Note 12 (128 GB)", brand: "Xiaomi", price: 1199, oldPrice: 1699, discount: "29% OFF", img: "img/redmi-note-12.png" },
-    { name: "Poco X5 (256 GB)", brand: "Xiaomi", price: 1599, oldPrice: 2199, discount: "27% OFF", img: "img/poco-x5.png" },
-    { name: "Zenfone 9 (128 GB)", brand: "Asus", price: 2999, oldPrice: 3799, discount: "21% OFF", img: "img/zenfone-9.png" },
-    { name: "Realme GT Neo 3 (256 GB)", brand: "Realme", price: 2199, oldPrice: 2899, discount: "24% OFF", img: "img/realme-gt-neo-3.png" },
+    { id: "galaxy-m13", name: "Galaxy M13 (4GB | 64 GB)", brand: "Samsung", price: 659, oldPrice: 1499, discount: "56% OFF", img: "img/galaxy-m13.png", description: "" },
+    { id: "galaxy-m33", name: "Galaxy M33 (4GB | 64 GB)", brand: "Samsung", price: 1699, oldPrice: 2499, discount: "32% OFF", img: "img/galaxy-m33.png", description: "" },
+    { id: "galaxy-m53", name: "Galaxy M53 (4GB | 64 GB)", brand: "Samsung", price: 3197, oldPrice: 4099, discount: "22% OFF", img: "img/galaxy-m53.png", description: "" },
+    { id: "samsung-s22-ultra", name: "Galaxy S22 Ultra (12GB | 128 GB)", brand: "Samsung", price: 6793, oldPrice: 8599, discount: "21% OFF", img: "img/samsung-s22-ultra.png", description: "" },
+    { id: "iphone-13", name: "iPhone 13 (128 GB)", brand: "Apple", price: 3999, oldPrice: 5499, discount: "27% OFF", img: "img/iphone-13.png", description: "" },
+    { id: "iphone-12", name: "iPhone 12 (64 GB)", brand: "Apple", price: 2899, oldPrice: 3999, discount: "27% OFF", img: "img/iphone-12.png", description: "" },
+    { id: "redmi-note-12", name: "Redmi Note 12 (128 GB)", brand: "Xiaomi", price: 1199, oldPrice: 1699, discount: "29% OFF", img: "img/redmi-note-12.png", description: "" },
+    { id: "poco-x5", name: "Poco X5 (256 GB)", brand: "Xiaomi", price: 1599, oldPrice: 2199, discount: "27% OFF", img: "img/poco-x5.png", description: "" },
+    { id: "zenfone-9", name: "Zenfone 9 (128 GB)", brand: "Asus", price: 2999, oldPrice: 3799, discount: "21% OFF", img: "img/zenfone-9.png", description: "" },
+    { id: "realme-gt-neo-3", name: "Realme GT Neo 3 (256 GB)", brand: "Realme", price: 2199, oldPrice: 2899, discount: "24% OFF", img: "img/realme-gt-neo-3.png", description: "" },
 ];
 
 function formatBRLProduct(value) {
@@ -24,11 +24,11 @@ function renderProductCard(product) {
     return `
         <div class="product-card" data-brand="${product.brand}">
             <div class="discount-badge">${product.discount}</div>
-            <div class="product-image-container">
+            <a href="produto.html?id=${product.id}" class="product-image-container">
                 ${imageHtml}
-            </div>
+            </a>
             <div class="product-info">
-                <h3 class="product-title">${product.name}</h3>
+                <h3 class="product-title"><a href="produto.html?id=${product.id}">${product.name}</a></h3>
                 <div class="product-pricing">
                     <span class="current-price">${formatBRLProduct(product.price)}</span>
                     <s class="original-price">${formatBRLProduct(product.oldPrice)}</s>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalhes do produto - Urubu Store</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <nav class="main-nav">
+            <div class="container">
+                <a href="index.html"><img src="img/store_profile.png" alt="Urubu Store" class="logo"></a>
+                <form class="search-bar" id="search-form">
+                    <input type="text" id="search-input" name="busca" placeholder="Procure por itens" autocomplete="off">
+                    <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </form>
+                <div class="user-actions">
+                    <a href="login.html" id="user-action-link"><i class="fa-solid fa-user"></i> Entrar / Cadastrar</a>
+                    <a href="carrinho.html" id="cart-link"><i class="fa-solid fa-cart-shopping"></i> Carrinho <span class="cart-badge" id="cart-badge">0</span></a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container product-detail-page">
+        <a href="produtos.html" class="back-link"><i class="fa-solid fa-arrow-left"></i> Voltar para produtos</a>
+
+        <div id="product-detail-content">
+        </div>
+    </main>
+
+    <script src="auth.js"></script>
+    <script src="cart.js"></script>
+    <script src="products.js"></script>
+    <script src="produto.js"></script>
+</body>
+</html>
