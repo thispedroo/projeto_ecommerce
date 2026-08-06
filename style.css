@@ -501,9 +501,30 @@ main {
     color: #28a745;
 }
 
+.perfil-shop-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    width: 100%;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 700;
+    text-decoration: none;
+    margin-top: 8px;
+    transition: background-color 0.2s ease;
+}
+
+.perfil-shop-btn:hover {
+    background-color: #0069d9;
+}
+
 .perfil-actions {
     display: inline-block;
-    margin-top: 10px;
+    margin-top: 16px;
     color: var(--primary-color);
     font-weight: 600;
     text-decoration: none;
