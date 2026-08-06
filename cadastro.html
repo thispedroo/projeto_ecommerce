@@ -31,7 +31,18 @@
                 </div>
                 <div class="form-group">
                     <label for="senha">Senha:</label>
-                    <input type="password" id="senha" name="senha" required>
+                    <div class="password-field">
+                        <input type="password" id="senha" name="senha" required minlength="8">
+                        <button type="button" class="password-toggle" data-target="senha" aria-label="Mostrar senha">
+                            <i class="fa-solid fa-eye"></i>
+                        </button>
+                    </div>
+                    <ul class="password-requirements" id="password-requirements">
+                        <li data-rule="length"><i class="fa-solid fa-circle"></i> Mínimo de 8 caracteres</li>
+                        <li data-rule="uppercase"><i class="fa-solid fa-circle"></i> Uma letra maiúscula</li>
+                        <li data-rule="lowercase"><i class="fa-solid fa-circle"></i> Uma letra minúscula</li>
+                        <li data-rule="number"><i class="fa-solid fa-circle"></i> Um número</li>
+                    </ul>
                 </div>
                 <button type="submit">Cadastrar</button>
             </form>
