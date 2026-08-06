@@ -307,6 +307,9 @@ main {
     text-align: center;
     transition: transform 0.25s ease-in-out;
     cursor: pointer;
+    text-decoration: none;
+    color: var(--text-color);
+    display: inline-block;
 }
 .category-item:hover {
     transform: scale(1.1) translateY(-5px);
